@@ -1,0 +1,423 @@
+/* Styles Généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+li { list-style: none; }
+a { text-decoration: none; }
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #020817; /* Fond sombre comme sur l'image */
+    color: white;
+}
+
+.logo { line-height: 1.2; }
+.logo .l1 { color: #4facfe; font-size: 1.5rem; font-weight: bold; }
+.logo .l2 { font-size: 1.2rem; font-weight: bold; }
+.logo small { font-size: 0.7rem; color: #888; }
+
+.navliens {
+    display: flex;
+    gap: 15px;
+}
+
+.navliens a {
+    color: #cbd5e1;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.navliens a:hover { color: #4facfe; }
+
+.abonner {
+    background-color: #0066FF;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.menu-burger { display: none; font-size: 1.5rem; cursor: pointer; }
+
+/* Header*/
+header {
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background-color: #020817;
+    color: white;
+    min-height: 450px;
+}
+
+.headertexte { flex: 1; }
+.top-subtitle { color: #4facfe; font-size: 0.9rem; margin-bottom: 10px; }
+.headertexte h1 { font-size: 2.8rem; line-height: 1.1; margin-bottom: 20px; }
+.headertexte p { color: #94a3b8; max-width: 500px; }
+
+.headerliens { display: flex; gap: 15px; margin-top: 30px; }
+
+.abonner2 {
+    border: 1px solid #4facfe;
+    color: #4facfe;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.headerimg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imgheader {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Section Domaines */
+.princ { padding: 60px 5%; background-color: #f8fafc; }
+.domaines { text-align: center; margin-bottom: 40px; }
+.domaines h3 { color: #0066FF; font-size: 0.8rem; margin-bottom: 10px; }
+
+.corpsdomaine {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    flex: 1;
+    float: left;
+}
+.imgcard { width: 40px; height: 40px; object-fit: cover; border-radius: 8px; }
+
+
+.card h4 { margin-bottom: 10px; }
+.card p { font-size: 0.9rem; color: #64748b; margin-bottom: 15px; }
+.card a { color: #0066FF; font-weight: bold; font-size: 0.85rem; }
+
+/* Section Articles */
+.articles { padding: 60px 8%; }
+.articlesheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.articlescontainer {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.articlecard {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    background: #fff;
+}
+
+/* Article principal (celui de gauche sur l'image) */
+.articlecard1 {
+    flex-direction: column;
+    flex: 1.5;
+}
+
+
+/* Petits articles (ceux de droite) */
+.article-card:not(.featured) {
+    flex-direction: row;
+}
+
+.article-body h4 { font-size: 1rem; margin-bottom: 5px; }
+.article-body p { font-size: 0.85rem; color: #64748b; margin-bottom: 10px; }
+.article-body .date { font-size: 0.75rem; color: #94a3b8; }
+
+img.cloud {
+    border-radius: 10px 0 0 10px;
+    width: 150px;
+    height: 190px;
+}
+
+img.cyber {
+    border-radius: 10px 0 0 10px;
+    width: 120px;
+    height: 190px;
+}
+
+img.aia {
+    border-radius: 10px 10px 0 0;
+    width: 400px;
+    height: 160px;
+}
+
+/* Footer */
+footer {
+    background: #020817;
+    color: white;
+    padding: 50px 8% 20px;
+}
+
+.footerlogo {
+    line-height: 1.2;
+}
+.footerlogo .l1 { color: #4facfe; font-size: 1.5rem; font-weight: bold; }
+.footerlogo .l2 { font-size: 1.2rem; font-weight: bold; }
+.footerlogo small { font-size: 0.7rem; color: #888; }   
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 30px;
+}
+
+.footerliens {
+    display: flex;
+    gap: 50px;
+}
+
+.footerliens h4 { color: #fff; font-size: 0.8rem; margin-bottom: 15px; }
+.footerliens a { color: #94a3b8; font-size: 0.8rem; line-height: 2; }
+
+.app { width: 15px; height: 15px; object-fit: cover; border-radius: 5px; }
+.socialicons ul {
+    display: flex;
+    gap: 15px;
+}
+
+.droits { text-align: center; padding-top: 20px; font-size: 0.75rem; color: #64748b; }
+
+/* Tablettes */
+@media (max-width: 992px) {
+    /* Navigation */
+    nav {
+        padding: 15px 3%;
+    }
+    
+    .logo .l2 { font-size: 1rem; }
+    .navliens { display: none; }
+    .nav-right .abonner { display: none; }
+    .menu-burger { display: block; color: white; }
+    
+    /* Header */
+    header { 
+        flex-direction: column; 
+        text-align: center;
+        padding: 40px 5%;
+        min-height: auto;
+    }
+    .headertexte h1 { font-size: 2.2rem; }
+    .headerliens { 
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+    .headerimg { 
+        margin-top: 30px;
+        width: 100%;
+    }
+    .imgheader { max-width: 300px; }
+    
+    /* Domaines */
+    .corpsdomaine {
+        gap: 15px;
+    }
+    .card { 
+        flex: 1 1 250px;
+        max-width: 100%;
+    }
+    
+    /* Articles */
+    .articles { padding: 40px 5%; }
+    .articlesheader { flex-direction: column; gap: 15px; }
+    .articlescontainer { 
+        flex-direction: column; 
+        gap: 15px;
+    }
+    .articlecard, .articlecard1 {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    img.cloud, img.cyber {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    img.aia {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Footer */
+    .footercontainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footerliens {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        flex-wrap: wrap;
+        padding: 10px 3%;
+        gap: 10px;
+    }
+    
+    .logo .l1 { font-size: 1.2rem; }
+    .logo .l2 { font-size: 0.95rem; }
+    .logo small { font-size: 0.65rem; }
+    
+    /* Header */
+    header {
+        padding: 30px 3%;
+    }
+    .top-subtitle { font-size: 0.8rem; }
+    .headertexte h1 { 
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    .headertexte p { 
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    .headerliens { 
+        gap: 10px;
+        flex-direction: column;
+    }
+    .abonner, .abonner2 {
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 0.75rem;
+    }
+    
+    /* Domaines */
+    .princ { padding: 40px 3%; }
+    .domaines h3 { font-size: 0.75rem; }
+    .domaines h2 { font-size: 1.5rem; }
+    .corpsdomaine {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .card { 
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .imgcard { width: 35px; height: 35px; }
+    .card h4 { font-size: 1rem; }
+    
+    /* Articles */
+    .articles { padding: 30px 3%; }
+    .articlesheader h3 { font-size: 0.75rem; }
+    .articlesheader .view-all { font-size: 0.75rem; }
+    .article-img { margin-bottom: 15px; }
+    .article-body h4 { font-size: 0.95rem; }
+    .article-body p { font-size: 0.8rem; }
+    .article-body .date { font-size: 0.7rem; }
+    
+    /* Footer */
+    footer { padding: 30px 3% 15px; }
+    .footerlogo .l1 { font-size: 1.2rem; }
+    .footerlogo .l2 { font-size: 0.95rem; }
+    .footerlogo small { font-size: 0.65rem; }
+    .footerliens h4 { font-size: 0.75rem; }
+    .footerliens a { font-size: 0.75rem; }
+    .droits { font-size: 0.7rem; }
+}
+
+/* smartphone petit écran */
+@media (max-width: 480px) {
+    /* Navigation */
+    nav {
+        padding: 10px 2%;
+    }
+    
+    .logo .l1 { font-size: 1rem; }
+    .logo .l2 { font-size: 0.85rem; }
+    .logo small { font-size: 0.6rem; }
+    .menu-burger { font-size: 1.2rem; }
+    
+    /* Header */
+    header {
+        padding: 20px 2%;
+    }
+    .headertexte h1 { 
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 12px;
+    }
+    .headertexte p { 
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    .abonner, .abonner2 {
+        padding: 8px 12px;
+        font-size: 0.7rem;
+    }
+    
+    /* Domaines */
+    .princ { padding: 30px 2%; }
+    .domaines h2 { font-size: 1.3rem; }
+    .corpsdomaine { gap: 10px; }
+    .card { padding: 15px; }
+    .imgcard { width: 30px; height: 30px; }
+    .card h4 { font-size: 0.95rem; }
+    .card p { font-size: 0.8rem; }
+    .card a { font-size: 0.75rem; }
+    
+    /* Articles */
+    .articles { padding: 20px 2%; }
+    .articlescontainer { gap: 10px; }
+    .article-body h4 { font-size: 0.9rem; }
+    .article-body p { font-size: 0.75rem; }
+    .article-body .date { font-size: 0.65rem; }
+    
+    /* Footer */
+    footer { padding: 20px 2% 10px; }
+    .footercontainer { border-bottom: 1px solid #1e293b; }
+    .social-icons ul { gap: 10px; }
+    .app { width: 12px; height: 12px; }
+}
